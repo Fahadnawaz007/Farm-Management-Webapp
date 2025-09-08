@@ -1,0 +1,42 @@
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .nav-item {
+        padding: 0 5px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+        padding: 10px 3px;
+    }
+
+    .exp-csv , .exp-pdf , .filter-btn{
+        font-size: 0.8em;
+    }
+
+    .table td, .table th {
+    white-space: nowrap;
+    font-size: 14px;
+    padding: 0.5rem;
+  }
+
+  .cb-username {
+    font-size: 13px;
+  }
+
+  .vtk-txt, .dc-txt, .dd-txt {
+    font-size: 13px;
+  }
+
+  .assigned-user-img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .three-dots {
+    width: 18px;
+    height: 18px;
+  }
+
+  .table {
+    min-width: 768px; 
+  }
+}

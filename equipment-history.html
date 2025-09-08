@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment History</title>
+    <link rel="icon" href="images/logo.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <!-- Main Content -->
+    <div class="container-fluid main-container px-0">
+        <div class="row g-0">
+            <aside class="col-12 col-md-2 bg-white px-2 sidebar">
+                <div class="sidebar-content sticky-top">
+                    <img src="/images/logo.svg" class="img-fluid main-logo my-3" alt="logo">
+                    <nav class="sidebar-nav">
+                        <ul class="nav flex-column ">
+                            <li class="nav-item d-flex ">
+                                <img src="/images/dash-icon-grey.svg" alt="dashboard-icon" class="nav-icon">
+                                <a class="nav-link" href="dashboard.html">Dashboard</a>
+                            </li>
+                            <li class="nav-item d-flex ">
+                                <img src="/images/user-icon.svg" alt="user-icon" class="nav-icon">
+                                <a class="nav-link" href="users.html">Users</a>
+                            </li>
+                            <li class="nav-item d-flex nav-active">
+                                <img src="/images/key-icon-green.svg" alt="key-icon" class="nav-icon">
+                                <a class="nav-link" href="equipments-record.html">Equipments Record</a>
+                            </li>
+                            <li class="nav-item d-flex">
+                                <img src="/images/task-square.svg" alt="task-icon-icon" class="nav-icon">
+                                <a class="nav-link" href="taskmanagement.html">Task Management</a>
+                            </li>
+                            <li class="nav-item d-flex">
+                                <img src="/images/chat-icon.svg" alt="chat-icon" class="nav-icon">
+                                <a class="nav-link" href="chat.html">Chat</a>
+                            </li>
+                            <li class="nav-item d-flex">
+                                <img src="/images/fm-icon-grey.svg" alt="fm-icon" class="nav-icon">
+                                <a class="nav-link" href="farm-management.html">Farm Management</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+            <main class="col-12 col-md-10 content-container">
+                <header class="main-header container-fluid">
+                    <nav class="navbar navbar-expand-lg bg-white">
+                        <div class="container-fluid">
+                            <div class="col-lg-9 col-md-8 col-sm-6">
+                                <div class="search-container">
+                                    <input type="text" class="form-control search-input" placeholder="Search...">
+                                    <i class="fas fa-search search-icon"></i>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-2">
+                                <div class="nav-actions d-flex align-items-center justify-content-end">
+                                    <div class="dropdown mx-1">
+                                        <a class=" nav-dropdown-btn dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Crops & Herbs
+                                        </a>
+
+                                        <ul class="dropdown-menu shadow-sm">
+                                            <li><a class="dropdown-item" href="#">Lorem Ipsum</a></li>
+                                            <li><a class="dropdown-item" href="#">Lorem Ipsum</a></li>
+                                            <li><a class="dropdown-item" href="#">Lorem Ipsum</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="notification-bell mx-1">
+                                        <img src="/images/bell-icon.svg" alt="bell-icon">
+                                    </div>
+                                    <div class="user-avatar ms-2">
+                                        <img src="/images/user-avatar.svg" alt="user-image"
+                                            class="img-fluid user-avatar-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+                <div class="container-fluid main-content-container">
+                    <section class="container-fluid bg-white section-header mt-3 pt-3">
+                        <div class="row align-items-center">
+                            <div class="section-title-container d-inline-flex ">
+                                <a href="equipments-record.html" ><i class="fa-solid fa-arrow-left page-return-arrow"></i></a>
+                                <h1 class="section-title">History</h1>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="search-btn-container col-10">
+                                    <div class="search-container w-50">
+                                        <input type="text" class="form-control search-input" placeholder="Search...">
+                                        <i class="fas fa-search search-icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4 flex-wrap">
+                            <div class="col">
+                                <div class="rt-container">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <colgroup>
+                                                <col style="width: 31.5%;"> <!-- Name -->
+                                                <col style="width: 31.5%;"> <!-- Last Maintenance Date -->
+                                                <col style="width: 31.5%;"> <!-- Checklist -->
+                                                <col style="width: 5%;"> <!-- Three dots -->
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <td class="tb-col-title">Name</td>
+                                                    <td class="tb-col-title">Last Maintenance Date</td>
+                                                    <td class="tb-col-title">Checklist</td>
+                                                    <td class="tb-col-title"><img src="/images/three-dots.svg" alt=""
+                                                            class="three-dots"></td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="history-info  ps-0 ">
+                                                        <div
+                                                            class="history-info-container d-flex align-items-center gap-2">
+                                                            <img src="/images/history-user-1.png" alt="equipment-img"
+                                                                class="history-img">
+                                                            <h6 class="history-user-name">Oliver Thompson</h6>
+                                                        </div>
+                                                    </td>
+                                                    <td class="last-md align-items-center ps-0">
+                                                        <a href="#" class="lm-txt">May 15, 2023</a>
+                                                    </td>
+                                                    <td class="checklist-date align-items-center ps-0">
+                                                        <a href="#" class="cd-txt">April 04, 2025</a>
+                                                    </td>
+                                                    <td class="tk-three-dots align-items-center dropstart ">
+
+                                                        <img src="/images/three-dots.svg" alt=""
+                                                            class="three-dots dropdown-toggle" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                        <ul class="dropdown-menu shadow-sm">
+                                                            <li><a class="dropdown-item">Edit</button></a>
+                                                            <li><a class="dropdown-item">Delete</button></a>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="history-info  ps-0 ">
+                                                        <div
+                                                            class="history-info-container d-flex align-items-center gap-2">
+                                                            <img src="/images/history-user-2.png" alt="equipment-img"
+                                                                class="history-img">
+                                                            <h6 class="history-user-name">Sophia Martinez</h6>
+                                                        </div>
+                                                    </td>
+                                                    <td class="last-md align-items-center ps-0">
+                                                        <a href="#" class="lm-txt">April 15, 2023</a>
+                                                    </td>
+                                                    <td class="checklist-date align-items-center ps-0">
+                                                        <a href="#" class="cd-txt">April 04, 2025</a>
+                                                    </td>
+                                                    <td class="tk-three-dots align-items-center dropstart ">
+
+                                                        <img src="/images/three-dots.svg" alt=""
+                                                            class="three-dots dropdown-toggle" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                        <ul class="dropdown-menu shadow-sm">
+                                                            <li><a class="dropdown-item">Edit</button></a>
+                                                            <li><a class="dropdown-item">Delete</button></a>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="history-info  ps-0 ">
+                                                        <div
+                                                            class="history-info-container d-flex align-items-center gap-2">
+                                                            <img src="/images/history-user-3.png" alt="equipment-img"
+                                                                class="history-img">
+                                                            <h6 class="history-user-name">Liam Johnson</h6>
+                                                        </div>
+                                                    </td>
+                                                    <td class="last-md align-items-center ps-0">
+                                                        <a href="#" class="lm-txt">March 15, 2023</a>
+                                                    </td>
+                                                    <td class="checklist-date align-items-center ps-0">
+                                                        <a href="#" class="cd-txt">April 04, 2025</a>
+                                                    </td>
+                                                    <td class="tk-three-dots align-items-center dropstart ">
+
+                                                        <img src="/images/three-dots.svg" alt=""
+                                                            class="three-dots dropdown-toggle" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                        <ul class="dropdown-menu shadow-sm">
+                                                            <li><a class="dropdown-item">Edit</button></a>
+                                                            <li><a class="dropdown-item">Delete</button></a>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="history-info  ps-0 ">
+                                                        <div
+                                                            class="history-info-container d-flex align-items-center gap-2">
+                                                            <img src="/images/history-user-4.png" alt="equipment-img"
+                                                                class="history-img">
+                                                            <h6 class="history-user-name">Emma Brown</h6>
+                                                        </div>
+                                                    </td>
+                                                    <td class="last-md align-items-center ps-0">
+                                                        <a href="#" class="lm-txt">February 15, 2023</a>
+                                                    </td>
+                                                    <td class="checklist-date align-items-center ps-0">
+                                                        <a href="#" class="cd-txt">April 04, 2025</a>
+                                                    </td>
+                                                    <td class="tk-three-dots align-items-center dropstart ">
+
+                                                        <img src="/images/three-dots.svg" alt=""
+                                                            class="three-dots dropdown-toggle" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                        <ul class="dropdown-menu shadow-sm">
+                                                            <li><a class="dropdown-item">Edit</button></a>
+                                                            <li><a class="dropdown-item">Delete</button></a>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="history-info  ps-0 ">
+                                                        <div
+                                                            class="history-info-container d-flex align-items-center gap-2">
+                                                            <img src="/images/history-user-5.png" alt="equipment-img"
+                                                                class="history-img">
+                                                            <h6 class="history-user-name">Noah Davis</h6>
+                                                        </div>
+                                                    </td>
+                                                    <td class="last-md align-items-center ps-0">
+                                                        <a href="#" class="lm-txt">January 15, 2023</a>
+                                                    </td>
+                                                    <td class="checklist-date align-items-center ps-0">
+                                                        <a href="#" class="cd-txt">April 04, 2025</a>
+                                                    </td>
+                                                    <td class="tk-three-dots align-items-center dropstart ">
+
+                                                        <img src="/images/three-dots.svg" alt=""
+                                                            class="three-dots dropdown-toggle" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                        <ul class="dropdown-menu shadow-sm">
+                                                            <li><a class="dropdown-item">Edit</button></a>
+                                                            <li><a class="dropdown-item">Delete</button></a>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="history-info  ps-0 ">
+                                                        <div
+                                                            class="history-info-container d-flex align-items-center gap-2">
+                                                            <img src="/images/history-user-6.png" alt="equipment-img"
+                                                                class="history-img">
+                                                            <h6 class="history-user-name">Ava Wilson</h6>
+                                                        </div>
+                                                    </td>
+                                                    <td class="last-md align-items-center ps-0">
+                                                        <a href="#" class="lm-txt">December 15, 2022</a>
+                                                    </td>
+                                                    <td class="checklist-date align-items-center ps-0">
+                                                        <a href="#" class="cd-txt">April 04, 2025</a>
+                                                    </td>
+                                                    <td class="tk-three-dots align-items-center dropstart ">
+
+                                                        <img src="/images/three-dots.svg" alt=""
+                                                            class="three-dots dropdown-toggle" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                        <ul class="dropdown-menu shadow-sm">
+                                                            <li><a class="dropdown-item">Edit</button></a>
+                                                            <li><a class="dropdown-item">Delete</button></a>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="history-info  ps-0 ">
+                                                        <div
+                                                            class="history-info-container d-flex align-items-center gap-2">
+                                                            <img src="/images/history-user-7.png" alt="equipment-img"
+                                                                class="history-img">
+                                                            <h6 class="history-user-name">Ethan Moore</h6>
+                                                        </div>
+                                                    </td>
+                                                    <td class="last-md align-items-center ps-0">
+                                                        <a href="#" class="lm-txt">November 15, 2022</a>
+                                                    </td>
+                                                    <td class="checklist-date align-items-center ps-0">
+                                                        <a href="#" class="cd-txt">April 04, 2025</a>
+                                                    </td>
+                                                    <td class="tk-three-dots align-items-center dropstart ">
+
+                                                        <img src="/images/three-dots.svg" alt=""
+                                                            class="three-dots dropdown-toggle" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                        <ul class="dropdown-menu shadow-sm">
+                                                            <li><a class="dropdown-item">Edit</button></a>
+                                                            <li><a class="dropdown-item">Delete</button></a>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="history-info  ps-0 ">
+                                                        <div
+                                                            class="history-info-container d-flex align-items-center gap-2">
+                                                            <img src="/images/history-user-8.png" alt="equipment-img"
+                                                                class="history-img">
+                                                            <h6 class="history-user-name">Isabella Taylor</h6>
+                                                        </div>
+                                                    </td>
+                                                    <td class="last-md align-items-center ps-0">
+                                                        <a href="#" class="lm-txt">October 15, 2022</a>
+                                                    </td>
+                                                    <td class="checklist-date align-items-center ps-0">
+                                                        <a href="#" class="cd-txt">April 04, 2025</a>
+                                                    </td>
+                                                    <td class="tk-three-dots align-items-center dropstart ">
+
+                                                        <img src="/images/three-dots.svg" alt=""
+                                                            class="three-dots dropdown-toggle" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                        <ul class="dropdown-menu shadow-sm">
+                                                            <li><a class="dropdown-item">Edit</button></a>
+                                                            <li><a class="dropdown-item">Delete</button></a>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="history-info  ps-0 ">
+                                                        <div
+                                                            class="history-info-container d-flex align-items-center gap-2">
+                                                            <img src="/images/history-user-9.png" alt="equipment-img"
+                                                                class="history-img">
+                                                            <h6 class="history-user-name">Mason Anderson</h6>
+                                                        </div>
+                                                    </td>
+                                                    <td class="last-md align-items-center ps-0">
+                                                        <a href="#" class="lm-txt">September 15, 2022</a>
+                                                    </td>
+                                                    <td class="checklist-date align-items-center ps-0">
+                                                        <a href="#" class="cd-txt">April 04, 2025</a>
+                                                    </td>
+                                                    <td class="tk-three-dots align-items-center dropstart ">
+
+                                                        <img src="/images/three-dots.svg" alt=""
+                                                            class="three-dots dropdown-toggle" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                        <ul class="dropdown-menu shadow-sm">
+                                                            <li><a class="dropdown-item">Edit</button></a>
+                                                            <li><a class="dropdown-item">Delete</button></a>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="history-info  ps-0 ">
+                                                        <div
+                                                            class="history-info-container d-flex align-items-center gap-2">
+                                                            <img src="/images/history-user-10.png" alt="equipment-img"
+                                                                class="history-img">
+                                                            <h6 class="history-user-name">Mia Thomas</h6>
+                                                        </div>
+                                                    </td>
+                                                    <td class="last-md align-items-center ps-0">
+                                                        <a href="#" class="lm-txt">August 15, 2022</a>
+                                                    </td>
+                                                    <td class="checklist-date align-items-center ps-0">
+                                                        <a href="#" class="cd-txt">April 04, 2025</a>
+                                                    </td>
+                                                    <td class="tk-three-dots align-items-center dropstart ">
+
+                                                        <img src="/images/three-dots.svg" alt=""
+                                                            class="three-dots dropdown-toggle" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                        <ul class="dropdown-menu shadow-sm">
+                                                            <li><a class="dropdown-item">Edit</button></a>
+                                                            <li><a class="dropdown-item">Delete</button></a>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"></script>
+
+</html>
